@@ -6,23 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day 1 - Sign Up Screen</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Inspiration - https://collectui.com/designers/davidjnf/sign-up -->
   </head>
   <body>
     <main>
       <div class="container">
         <form class="form-box" method="POST">
-          <h1>Sign Up Form</h1>
-          <section>
+          <h1 class="visually-hidden">Sign Up Form</h1>
+          <section class="form-inputs">
             <label for="name" class="visually-hidden">Name</label>
-            <input type="text" name="full_name" id="name" />
+            <input
+              type="text"
+              name="full_name"
+              id="name"
+              placeholder="Full Name"
+              class="form-input"
+            />
             <label for="email" class="visually-hidden">Email Address</label>
-            <input type="email" name="email_address" id="email" />
+            <input
+              type="email"
+              name="email_address"
+              id="email"
+              placeholder="Email"
+              class="form-input"
+            />
             <label for="password" class="visually-hidden">Password</label>
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              class="form-input"
+            />
           </section>
           <section>
-            <button type="submit">Sign Up</button>
+            <button type="submit" class="submit-button">Sign Up</button>
           </section>
         </form>
       </div>
