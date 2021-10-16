@@ -2,9 +2,14 @@ body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("./images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Remove glow from inputs  */
@@ -20,7 +25,7 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: paleturquoise;
+  background: #f1f2f6;
   padding: 1em;
   border-radius: 0.5em;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
@@ -44,15 +49,16 @@ button:focus {
 
 .form-input {
   border: 0;
-  border-bottom: 2px solid palevioletred;
+  border-bottom: 2px solid #1e90ff;
   width: 260px;
   padding: 0.5em;
   margin: 0.5em 0;
+  font-size: 18px;
 }
 
 .submit-button {
   border: none;
-  background-color: palevioletred;
+  background-color: #1e90ff;
   color: #ffffff;
   padding: 1em 2em;
   margin-top: -2em;
@@ -62,6 +68,24 @@ button:focus {
   border-radius: 0.25em;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #70a1ff;
+}
+
+.login-text {
+  font-size: 16px;
+}
+
+.login-link {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+  color: #70a1ff;
 }
 
 .visually-hidden {
