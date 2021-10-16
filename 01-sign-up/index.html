@@ -11,16 +11,19 @@
   <body>
     <main>
       <div class="container">
-        <form class="form-box">
-          <fieldset>
-            <legend>Sign Up</legend>
-            <label for="name">Name</label>
+        <form class="form-box" method="POST">
+          <h1>Sign Up Form</h1>
+          <section>
+            <label for="name" class="visually-hidden">Name</label>
             <input type="text" name="full_name" id="name" />
-            <label for="email">Email Address</label>
+            <label for="email" class="visually-hidden">Email Address</label>
             <input type="email" name="email_address" id="email" />
-            <label for="password">Password</label>
+            <label for="password" class="visually-hidden">Password</label>
             <input type="password" name="password" id="password" />
-          </fieldset>
+          </section>
+          <section>
+            <button type="submit">Sign Up</button>
+          </section>
         </form>
       </div>
     </main>
