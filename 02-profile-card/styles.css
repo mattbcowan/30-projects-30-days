@@ -126,4 +126,17 @@ main {
 
 /* DESKTOP */
 @media (min-width: 1440px) {
+  .card {
+    width: 350px;
+  }
+
+  .bubble-top {
+    top: -600px;
+    left: -200px;
+  }
+
+  .bubble-bottom {
+    bottom: -600px;
+    right: -200px;
+  }
 }
