@@ -21,34 +21,60 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <main class="card">
-      <section class="card-header"></section>
-      <section class="card-photo"></section>
-      <section class="card-content">
-        <h1>Victor Crest <span class="user-age">26</span></h1>
-        <p class="user-location">London</p>
-        <ul>
-          <li>
-            <div class="social-number">80K</div>
-            <div class="social-text">Followers</div>
-          </li>
-          <li>
-            <div class="social-number">803K</div>
-            <div class="social-text">Likes</div>
-          </li>
-          <li>
-            <div class="social-number">1.4K</div>
-            <div class="social-text">Photos</div>
-          </li>
-        </ul>
-      </section>
+    <main>
+      <div class="card">
+        <section class="card-header">
+          <img
+            src="./images/bg-pattern-card.svg"
+            alt="Illustrated Bubbles covering the top of the profile card"
+          />
+        </section>
+        <section class="card-photo">
+          <img
+            src="./images/image-victor.jpg"
+            alt="Victor Crest profile photo"
+          />
+        </section>
+        <section class="card-content">
+          <h1 class="user-info">
+            Victor Crest <span class="user-age">26</span>
+          </h1>
+          <p class="user-location">London</p>
+          <ul class="social">
+            <li>
+              <h2 class="social-number">80K</h2>
+              <div class="social-text">Followers</div>
+            </li>
+            <li>
+              <h2 class="social-number">803K</h2>
+              <div class="social-text">Likes</div>
+            </li>
+            <li>
+              <h2 class="social-number">1.4K</h2>
+              <div class="social-text">Photos</div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.mattbcowan.com" target="_blank">Matt Cowan</a>.
+      </div>
     </main>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://www.mattbcowan.com" target="_blank">Matt Cowan</a>.
-    </div>
+    <section class="background">
+      <img
+        src="./images/bg-pattern-top.svg"
+        alt="Bubble at the top of the background"
+        class="bubble-top"
+      />
+      <img
+        src="./images/bg-pattern-bottom.svg"
+        alt="Bubble at the bottom of the background"
+        class="bubble-bottom"
+      />
+    </section>
   </body>
 </html>

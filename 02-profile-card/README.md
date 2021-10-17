@@ -37,7 +37,9 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 Let's get started. First off, in yesterday's build I realized that I forgot to make ANY MEDIA QUERIES. I messed up. So today we are starting out mobile first. To begin I'm making a styles.css and adding in my initial styles from the style guide and my desktop media query.
 
-After getting the styles set up I went in and adjusted the HTML to section things out. This is pretty standard for me with these Frontend Mentor projects.
+After getting the styles set up I went in and adjusted the HTML to section things out. This is pretty standard for me with these Frontend Mentor projects. I added in the images from the image folder in their specific locations based on the provided designs.
+
+Once the HTML was cleaned up it was time to work on the mobile version of the design. My main focus was the card itself. That's what I think will be the hardest part as the background is just setting the bubbles in the right places. I measured the card width based on the mobile design and made that the width for the mobile styles.
 
 ### Built with
 
