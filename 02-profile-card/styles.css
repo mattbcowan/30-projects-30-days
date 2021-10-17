@@ -83,7 +83,7 @@ main {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  padding: 3em;
+  padding: 2em 3em;
   margin: 0;
   width: auto;
   border-top: 1px solid var(--dark-gray);
@@ -97,6 +97,8 @@ main {
 
 .social-text {
   color: var(--dark-gray-blue);
+  letter-spacing: 0.1em;
+  font-size: 12px;
 }
 
 .background {
@@ -108,6 +110,18 @@ main {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.bubble-top {
+  position: fixed;
+  top: -600px;
+  left: -600px;
+}
+
+.bubble-bottom {
+  position: fixed;
+  bottom: -600px;
+  right: -600px;
 }
 
 /* DESKTOP */
