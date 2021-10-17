@@ -37,6 +37,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 Let's get started. First off, in yesterday's build I realized that I forgot to make ANY MEDIA QUERIES. I messed up. So today we are starting out mobile first. To begin I'm making a styles.css and adding in my initial styles from the style guide and my desktop media query.
 
+After getting the styles set up I went in and adjusted the HTML to section things out. This is pretty standard for me with these Frontend Mentor projects.
+
 ### Built with
 
 - Semantic HTML5 markup

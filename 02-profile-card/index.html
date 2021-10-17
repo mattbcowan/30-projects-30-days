@@ -17,26 +17,38 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Frontend Mentor | Profile card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
+    <main class="card">
+      <section class="card-header"></section>
+      <section class="card-photo"></section>
+      <section class="card-content">
+        <h1>Victor Crest <span class="user-age">26</span></h1>
+        <p class="user-location">London</p>
+        <ul>
+          <li>
+            <div class="social-number">80K</div>
+            <div class="social-text">Followers</div>
+          </li>
+          <li>
+            <div class="social-number">803K</div>
+            <div class="social-text">Likes</div>
+          </li>
+          <li>
+            <div class="social-number">1.4K</div>
+            <div class="social-text">Photos</div>
+          </li>
+        </ul>
+      </section>
+    </main>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://www.mattbcowan.com" target="_blank">Matt Cowan</a>.
     </div>
   </body>
 </html>
