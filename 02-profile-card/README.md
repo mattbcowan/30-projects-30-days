@@ -14,9 +14,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -26,12 +23,12 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/profile-card-component-desktop.png)
+![](./images/profile-card-component-mobile.png)
 
 ### Links
 
-- Solution URL: [Under Construction](https://your-solution-url.com)
-- Live Site URL: [Under Construction](https://your-live-site-url.com)
+- Live Site URL: [Under Construction](https://mattbcowan.github.io/30-projects-30-days/02-profile-card/)
 
 ## My process
 
@@ -39,24 +36,31 @@ Let's get started. First off, in yesterday's build I realized that I forgot to m
 
 After getting the styles set up I went in and adjusted the HTML to section things out. This is pretty standard for me with these Frontend Mentor projects. I added in the images from the image folder in their specific locations based on the provided designs.
 
-Once the HTML was cleaned up it was time to work on the mobile version of the design. My main focus was the card itself. That's what I think will be the hardest part as the background is just setting the bubbles in the right places. I measured the card width based on the mobile design and made that the width for the mobile styles.
+Once the HTML was cleaned up it was time to work on the mobile version of the design. My main focus was the card itself. That's what I think will be the hardest part as the background is just setting the bubbles in the right places. I measured the card width based on the mobile design and made that the width for the mobile styles. After that I made everything flex components and adjusted the sizing of the text, weight of the text, spacing, etc. This will be standard even on the desktop version so I want to get this correct before moving forward. Once I have all of the text taken care of I moved on to the actual layout of all the components. The tricky one is the profile picture which I used negative margin on. Not sure if this is best practices but it worked.
+
+Once the card was completed I moved on to the background. This wasn't too bad, mostly just tweaking the position of the bubbles.
+
+Once the background was done it was time to move onto desktop styling. This was pretty straight forward. All I did was tweak a few numbers on the components and it was all good!
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
+I learned about some weird issues with flexbox and z-indexing. I'm not use to having to make backgrounds via multiple SVG's, normally I would just make the entire background and save 1 SVG but I can see where this would be useful. It is more work to get it working but it looks pretty nice at the end of the day.
+
 ### Continued development
+
+I need to work on my skills with flexbox in general. I know enough to get 70-75% of the way to where I want to be but that little extra would be ideal. I also need to work on layering elements more. That took me the longest of anything just due to having to look up stuff on z-indexing. Overall, not a hard build but I did learn quite a bit.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN - Z-Indexing](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) - This helped a ton for learning about how z-indexes work in order to get the background working.
+- [CSS Tricks - Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - I always have this open when I'm working with flexbox. It's a timesaver and I literally just open it before I start working.
 
 ## Author
 
