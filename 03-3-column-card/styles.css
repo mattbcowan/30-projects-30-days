@@ -1,0 +1,41 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* Paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* Backgrounds, headings buttons */
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--very-light-gray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  padding: 20px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+}
