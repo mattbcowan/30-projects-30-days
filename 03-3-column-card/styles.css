@@ -12,13 +12,19 @@ body {
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
   color: var(--transparent-white);
+  padding: 0;
+  margin: 0;
 }
 
-h1,
-h2,
-h3 {
+h2 {
   font-family: "Big Shoulders Display", cursive;
   color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+p {
+  line-height: 1.75em;
 }
 
 .attribution {
@@ -30,12 +36,111 @@ h3 {
   right: 0;
   margin-bottom: 0;
   padding: 20px 0;
+  margin-top: 20px;
+  background-color: darkslategrey;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: wheat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 4em;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.sedan-card {
+  background-color: var(--bright-orange);
+  padding: 3em;
+}
+
+.suv-card {
+  background-color: var(--dark-cyan);
+  padding: 3em;
+}
+
+.luxury-card {
+  background-color: var(--very-dark-cyan);
+  padding: 3em;
+}
+
+.learn-more-button {
+  background-color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  padding: 1em 2em;
+  margin-top: 1em;
+  font-size: 1.125em;
+  border-radius: 5em;
+  cursor: pointer;
+}
+
+.lmb-sedan {
+  color: var(--bright-orange);
+}
+
+.lmb-sedan:hover {
+  color: var(--very-light-gray);
+  background-color: var(--bright-orange);
+}
+
+.lmb-suv {
+  color: var(--dark-cyan);
+}
+.lmb-suv:hover {
+  color: var(--very-light-gray);
+  background-color: var(--dark-cyan);
+}
+
+.lmb-lux {
+  color: var(--very-dark-cyan);
+}
+.lmb-lux:hover {
+  color: var(--very-light-gray);
+  background-color: var(--very-dark-cyan);
 }
 
 /* Desktop */
 @media (min-width: 1440px) {
+  main {
+    height: 100vh;
+  }
+
+  .container {
+    height: 100vh;
+    padding: 0;
+  }
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 920px;
+  }
+
+  .sedan-card {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .suv-card {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .luxury-card {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .learn-more-button {
+    margin-top: 5em;
+  }
 }
