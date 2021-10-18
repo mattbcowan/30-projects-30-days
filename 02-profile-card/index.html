@@ -23,19 +23,19 @@
   <body>
     <main>
       <div class="card">
-        <section class="card-header">
+        <div class="card-header">
           <img
             src="./images/bg-pattern-card.svg"
             alt="Illustrated Bubbles covering the top of the profile card"
           />
-        </section>
-        <section class="card-photo">
+        </div>
+        <div class="card-photo">
           <img
             src="./images/image-victor.jpg"
             alt="Victor Crest profile photo"
           />
-        </section>
-        <section class="card-content">
+        </div>
+        <div class="card-content">
           <h1 class="user-info">
             Victor Crest <span class="user-age"> 26</span>
           </h1>
@@ -54,9 +54,9 @@
               <div class="social-text">Photos</div>
             </li>
           </ul>
-        </section>
+        </div>
       </div>
-      <div class="attribution">
+      <footer class="attribution">
         Challenge by
         <a
           href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ"
@@ -64,19 +64,21 @@
           >Frontend Mentor</a
         >. Coded by
         <a href="https://www.mattbcowan.com" target="_blank">Matt Cowan</a>.
-      </div>
+      </footer>
     </main>
-    <section class="background">
+    <div class="background">
       <img
         src="./images/bg-pattern-top.svg"
         alt="Bubble at the top of the background"
         class="bubble-top"
+        aria-hidden="true"
       />
       <img
         src="./images/bg-pattern-bottom.svg"
         alt="Bubble at the bottom of the background"
         class="bubble-bottom"
+        aria-hidden="true"
       />
-    </section>
+    </div>
   </body>
 </html>
