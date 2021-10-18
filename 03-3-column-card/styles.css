@@ -108,6 +108,15 @@ p {
   color: var(--very-light-gray);
   background-color: var(--very-dark-cyan);
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
 /* Desktop */
 @media (min-width: 1440px) {
