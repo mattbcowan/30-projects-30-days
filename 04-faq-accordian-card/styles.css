@@ -21,6 +21,18 @@ html {
   align-items: center;
 }
 
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  top: -100px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--very-dark-blue);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -38,20 +50,35 @@ html {
   color: wheat;
 }
 
+.picture-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .card {
   display: grid;
 }
 
 .card-header {
-  padding: 0 4em;
+  width: 100%;
   z-index: 2;
+}
+
+.card-header picture {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.illustration {
+  width: 240px;
 }
 
 .card-content {
   margin: 1em;
   margin-top: -6em;
-  padding: 1em;
-  padding-top: 6em;
+  padding: 0 1em 4em 1em;
   background-color: #fff;
   border-radius: 1em;
   overflow: hidden;
@@ -63,8 +90,9 @@ html {
 
 .tab {
   width: 100%;
-  color: var(--very-dark-blue);
+  color: var(--gray-blue);
   overflow: hidden;
+  border-bottom: 1px solid var(--divider-gray);
 }
 
 .label {
@@ -75,11 +103,41 @@ html {
   cursor: pointer;
 }
 
+.label::after {
+  content: "\276F";
+  color: var(--soft-red);
+  transform: rotate(90deg);
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.25s;
+}
+
 .content {
   max-height: 0;
   padding: 0 1em;
-  color: var(--dark-gray-blue);
-  transition: all 0.35s;
+  line-height: 2em;
+  font-size: 0.9em;
+  color: var(--gray-blue);
+  transition: all 0.5s;
+}
+
+.content p {
+  margin: 0;
+}
+
+input:checked + .label {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+input:checked + label::after {
+  transform: rotate(-90deg);
+}
+
+input:checked ~ .content {
+  max-height: 100vh;
+  padding: 1em;
 }
 
 @media (min-width: 1366px) {
