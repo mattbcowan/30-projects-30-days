@@ -1,0 +1,16 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: darkslategrey;
+}
+
+.attribution a {
+  color: wheat;
+}
