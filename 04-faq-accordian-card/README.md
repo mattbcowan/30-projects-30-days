@@ -38,6 +38,8 @@ Users should be able to:
 
 For this project I started by creating a styles.css file and cleaning up the HTML to better separate the content. It will change as we move through the project but for right now all I did was add headers, paragraphs and some buttons in order to make this a little more easy to read.
 
+After the initial setup I went ahead and imported the pictures, added the styles from the style guide into the CSS and started the process of making the card. For the card styles it was fairly straight forward. radius corners, z-indexing the header photo, adding in margins, etc. No functionality was added at first, it was just to get the general idea of the build.
+
 ### Built with
 
 - Semantic HTML5 markup

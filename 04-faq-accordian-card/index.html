@@ -13,69 +13,90 @@
     />
     <title>Frontend Mentor | FAQ Accordion Card</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
-      <h1>FAQ</h1>
-      <div class="tabs">
-        <div class="tab">
-          <input type="checkbox" id="team-members" />
-          <label class="label" for="team-members"
-            >How many team members can I invite?</label
-          >
-          <div class="content">
-            <p>
-              You can invite up to 2 additional users on the Free plan. There is
-              no limit on team members for the Premium plan.
-            </p>
+    <main class="card">
+      <div class="card-header">
+        <picture>
+          <source
+            srcset="./images/illustration-woman-online-desktop.svg"
+            media="(min-width: 1366px)"
+          />
+          <img
+            src="./images/illustration-woman-online-mobile.svg"
+            alt="An illustration of a woman using a computer"
+            aria-hidden="true"
+          />
+        </picture>
+      </div>
+      <div class="card-content">
+        <h1>FAQ</h1>
+        <div class="tabs">
+          <div class="tab">
+            <input type="checkbox" id="team-members" />
+            <label class="label" for="team-members"
+              >How many team members can I invite?</label
+            >
+            <div class="content">
+              <p>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="tab">
-          <input type="checkbox" id="max-upload" />
-          <label class="label" for="max-upload"
-            >What is the maximum file upload size?</label
-          >
-          <div class="content">
-            <p>
-              No more than 2GB. All files in your account must fit your allotted
-              storage space.
-            </p>
+          <div class="tab">
+            <input type="checkbox" id="max-upload" />
+            <label class="label" for="max-upload"
+              >What is the maximum file upload size?</label
+            >
+            <div class="content">
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="tab">
-          <input type="checkbox" id="reset-password" />
-          <label class="label" for="reset-password"
-            >How do I reset my password?</label
-          >
-          <div class="content">
-            <p>
-              Click “Forgot password” from the login page or “Change password”
-              from your profile page. A reset link will be emailed to you.
-            </p>
+          <div class="tab">
+            <input type="checkbox" id="reset-password" />
+            <label class="label" for="reset-password"
+              >How do I reset my password?</label
+            >
+            <div class="content">
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="tab">
-          <input type="checkbox" id="subscription" />
-          <label class="label" for="subscription"
-            >Can I cancel my subscription?</label
-          >
-          <div class="content">
-            <p>
-              Yes! Send us a message and we’ll process your request no questions
-              asked.
-            </p>
+          <div class="tab">
+            <input type="checkbox" id="subscription" />
+            <label class="label" for="subscription"
+              >Can I cancel my subscription?</label
+            >
+            <div class="content">
+              <p>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="tab">
-          <input type="checkbox" id="support" />
-          <label class="label" for="support"
-            >Do you provide additional support?</label
-          >
-          <div class="content">
-            <p>
-              Chat and email support is available 24/7. Phone lines are open
-              during normal business hours.
-            </p>
+          <div class="tab">
+            <input type="checkbox" id="support" />
+            <label class="label" for="support"
+              >Do you provide additional support?</label
+            >
+            <div class="content">
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
           </div>
         </div>
       </div>

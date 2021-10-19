@@ -1,3 +1,26 @@
+:root {
+  --very-dark-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --dark-gray-blue: hsl(237, 12%, 33%);
+  --gray-blue: hsl(240, 6%, 50%);
+  --divider-gray: hsl(240, 5%, 91%);
+}
+
+html {
+  background: linear-gradient(
+    145deg,
+    hsl(273, 75%, 66%) 0%,
+    hsl(240, 73%, 65%) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -13,4 +36,51 @@
 
 .attribution a {
   color: wheat;
+}
+
+.card {
+  display: grid;
+}
+
+.card-header {
+  padding: 0 4em;
+  z-index: 2;
+}
+
+.card-content {
+  margin: 1em;
+  margin-top: -6em;
+  padding: 1em;
+  padding-top: 6em;
+  background-color: #fff;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.tabs {
+  overflow: hidden;
+}
+
+.tab {
+  width: 100%;
+  color: var(--very-dark-blue);
+  overflow: hidden;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.content {
+  max-height: 0;
+  padding: 0 1em;
+  color: var(--dark-gray-blue);
+  transition: all 0.35s;
+}
+
+@media (min-width: 1366px) {
 }
