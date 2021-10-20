@@ -29,7 +29,7 @@ body {
   margin-bottom: 1em;
 }
 
-.main {
+main {
   display: grid;
 }
 
@@ -94,4 +94,35 @@ footer div:hover {
 
 footer div:first-child {
   margin-left: 0;
+}
+
+@media (min-width: 920px) {
+  html {
+    background-image: url("./images/bg-desktop.svg");
+    background-size: cover;
+  }
+  main {
+    grid-template-columns: 7fr 5fr;
+    grid-template-rows: auto;
+  }
+
+  .image-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    padding-top: 3em;
+  }
+
+  footer {
+    justify-content: flex-end;
+  }
+
+  footer div:last-child {
+    margin-right: 2em;
+  }
 }
