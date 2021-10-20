@@ -92,6 +92,7 @@ p {
   font-size: 1.125em;
   border-radius: 5em;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .lmb-sedan {
