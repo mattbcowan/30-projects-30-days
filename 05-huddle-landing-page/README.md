@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[Live Site](https://mattbcowan.github.io/30-projects-30-days/05-huddle-landing-page/)
 
 ## My process
 
