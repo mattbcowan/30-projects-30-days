@@ -8,6 +8,16 @@
   --very-light-gray: hsl(0, 0%, 95%);
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
@@ -119,11 +129,7 @@ p {
 }
 
 /* Desktop */
-@media (min-width: 1440px) {
-  main {
-    height: 100vh;
-  }
-
+@media (min-width: 920px) {
   .container {
     height: 100vh;
     padding: 0;
