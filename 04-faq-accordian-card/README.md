@@ -40,7 +40,9 @@ For this project I started by creating a styles.css file and cleaning up the HTM
 
 After the initial setup I went ahead and imported the pictures, added the styles from the style guide into the CSS and started the process of making the card. For the card styles it was fairly straight forward. radius corners, z-indexing the header photo, adding in margins, etc. No functionality was added at first, it was just to get the general idea of the build.
 
-Once that was done it was on to the difficult part, the accordion menu. I'm doing a version without any JavaScript since it was a challenge in the brief and I've never done one without JS before. I added in some css based on if the input button was checked and the label it was associated to matched. If that happened then the content view height would change from 0 to whatever it needed to be. This allowed for the content to show and the transitions made it feel a little smoother. I did use [Raul Barrera's](https://codepen.io/raubaca/pen/PZzpVe?editors=1100) codepen as a guideline for the accordion. Once I had the basic feel down I adjusted it to be closer to what I was looking for.
+Once that was done it was on to the accordion menu. I'm doing a version without any JavaScript since it was a challenge in the brief and I've never done one without JS before. I added in some css based on if the input button was checked and the label it was associated to matched. If that happened then the content view height would change from 0 to whatever it needed to be. This allowed for the content to show and the transitions made it feel a little smoother. I did use [Raul Barrera's](https://codepen.io/raubaca/pen/PZzpVe?editors=1100) codepen as a guideline for the accordion. Once I had the basic feel down I adjusted it to be closer to what I was looking for.
+
+Now, right here is where things got interesting. Placing the images and shadows. This felt impossible and honestly I just gave up on the shadows. Scaling SVG's is such a ridiculous pain that I just gave up after an hour and a half of fighting.
 
 ### Built with
 

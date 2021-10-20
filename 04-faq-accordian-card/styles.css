@@ -1,3 +1,5 @@
+/* Just colors and the attribution area. Can be ignored */
+
 :root {
   --very-dark-blue: hsl(238, 29%, 16%);
   --soft-red: hsl(14, 88%, 65%);
@@ -6,6 +8,27 @@
   --divider-gray: hsl(240, 5%, 91%);
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: darkslategrey;
+  color: white;
+}
+
+.attribution a {
+  color: wheat;
+}
+
+/* Styling for the project begins here  */
+
+/* Background */
 html {
   background: linear-gradient(
     145deg,
@@ -21,67 +44,14 @@ html {
   align-items: center;
 }
 
+/* Input Styling */
+
+/* Hide the checkboxes */
 input {
   position: absolute;
   opacity: 0;
   z-index: -1;
   top: -100px;
-}
-
-h1 {
-  text-align: center;
-  color: var(--very-dark-blue);
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: 0;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: darkslategrey;
-}
-
-.attribution a {
-  color: wheat;
-}
-
-.picture-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.card {
-  display: grid;
-}
-
-.card-header {
-  width: 100%;
-  z-index: 2;
-}
-
-.card-header picture {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1em;
-}
-
-.illustration {
-  width: 240px;
-}
-
-.card-content {
-  margin: 1em;
-  margin-top: -6em;
-  padding: 0 1em 4em 1em;
-  background-color: #fff;
-  border-radius: 1em;
-  overflow: hidden;
 }
 
 .tabs {
@@ -101,6 +71,10 @@ h1 {
   padding: 1em;
   font-weight: 400;
   cursor: pointer;
+}
+
+.label:hover {
+  color: var(--soft-red);
 }
 
 .label::after {
@@ -140,5 +114,94 @@ input:checked ~ .content {
   padding: 1em;
 }
 
-@media (min-width: 1366px) {
+/* Card Styling */
+
+.picture-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: var(--very-dark-blue);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin: 1em;
+  padding: 1em;
+  padding-bottom: 3em;
+  border-radius: 1em;
+  background-color: white;
+  box-shadow: 8px 8px 16px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  width: 100%;
+  z-index: 2;
+}
+
+.card-header picture {
+  display: flex;
+  justify-content: center;
+  margin-top: -8em;
+  margin-bottom: 2em;
+}
+
+.illustration {
+  width: 240px;
+}
+
+@media (min-width: 920px) {
+  h1 {
+    text-align: left;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 920px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .card-header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+    margin-left: -5em;
+    z-index: 1;
+  }
+
+  .card-content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 2em;
+  }
+
+  .illustration {
+    width: 460px;
+    margin-left: -2em;
+    z-index: 1;
+  }
+
+  .picture-container {
+    margin-left: -40em;
+    width: 200px;
+    height: 510px;
+  }
+
+  picture .box {
+    position: sticky;
+    margin-bottom: -408px;
+    margin-left: -5em;
+    z-index: 3;
+  }
 }
