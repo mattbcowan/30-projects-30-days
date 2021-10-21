@@ -37,6 +37,8 @@ Users should be able to:
 
 Starting off I made a styles.css and a scripts.js file and linked them to the HTML. As soon as that was done I added in the font links, then I went to the styles.css and added the fonts and colors from the style guide.
 
+Once that was done I cleaned up the HTML and added in some classes. I moved on from that and added in some basic styling for the mobile version of the article preview.
+
 ### Built with
 
 - Semantic HTML5 markup

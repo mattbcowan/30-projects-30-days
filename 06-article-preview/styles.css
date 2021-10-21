@@ -5,6 +5,92 @@
   --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Manrope", sans-serif;
+  background-color: var(--light-grayish-blue);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.25em;
+}
+
+h2 {
+  font-size: 1.125em;
+}
+
+.card {
+  display: grid;
+  margin: 2em;
+  border-radius: 1em;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-image {
+  width: 100%;
+}
+
+.content {
+  margin: 2em;
+  color: var(--dark-gray-blue);
+}
+
+.content p {
+  font-size: 1em;
+  line-height: 1.75em;
+  color: var(--desaturated-dark-blue);
+  margin-bottom: 3em;
+}
+
+.card-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+}
+
+.card-author-info {
+  display: flex;
+}
+
+.info-text {
+  margin-left: 1em;
+}
+
+.date {
+  color: var(--grayish-blue);
+}
+
+.share-btn {
+  font-size: 1.25em;
+  color: var(--desaturated-dark-blue);
+  background-color: var(--light-grayish-blue);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
 }
