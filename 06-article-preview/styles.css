@@ -50,11 +50,14 @@ h2 {
 }
 
 .content {
-  margin: 2em;
   color: var(--dark-gray-blue);
 }
 
-.content p {
+.content-text {
+  padding: 2em 2em 0 2em;
+}
+
+.content-text p {
   font-size: 1em;
   line-height: 1.75em;
   color: var(--desaturated-dark-blue);
@@ -65,6 +68,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2em;
 }
 
 .avatar {
@@ -85,6 +89,13 @@ h2 {
   color: var(--grayish-blue);
 }
 
+.share-container {
+  display: block;
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
 .share-btn {
   font-size: 1.25em;
   color: var(--desaturated-dark-blue);
@@ -93,4 +104,55 @@ h2 {
   width: 36px;
   height: 36px;
   border-radius: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.share-container-secondary {
+  overflow: hidden;
+  height: 120px;
+  margin-bottom: -100px;
+}
+
+.share-container-secondary-content {
+  background: var(--dark-gray-blue);
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  display: block;
+  height: 100px;
+  padding: 2em 2em;
+  display: none;
+}
+
+.share-container-secondary-content i {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+@media (min-width: 900px) {
+  .card {
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    max-width: 840px;
+  }
+  header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 2em 4em;
+  }
+
+  .content p {
+    margin-bottom: 1.5em;
+    font-size: 0.85em;
+  }
+  .header-image {
+    height: 100%;
+    object-fit: cover;
+  }
 }
