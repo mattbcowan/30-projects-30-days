@@ -1,0 +1,96 @@
+:root {
+  --mint-green: #1dd1a1;
+  --flat-red: #ee5253;
+  --flat-blue: #0abde3;
+  --muted-dark-blue: #222f3e;
+  --light-gray: #c8d6e5;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  display: flex;
+}
+
+ul li {
+  padding-left: 16px;
+}
+
+ul li:first-child {
+  position: absolute;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul li:nth-child(2) {
+  margin-left: 64px;
+}
+
+.button {
+  display: block;
+  height: 64px;
+  width: 64px;
+  cursor: pointer;
+}
+
+.cover {
+  width: 304px;
+  background-color: var(--muted-dark-blue);
+}
+
+.animate {
+  animation-name: reveal;
+  animation-duration: 750ms;
+  animation-fill-mode: forwards;
+}
+
+.animate-reverse {
+  animation-name: hide;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+
+.twitter {
+  background-color: var(--flat-blue);
+}
+
+.youtube {
+  background-color: var(--flat-red);
+}
+
+.google {
+  background-color: var(--mint-green);
+}
+
+@keyframes reveal {
+  from {
+    width: 304px;
+  }
+  40% {
+    width: 340px;
+  }
+  to {
+    width: 64px;
+  }
+}
+
+@keyframes hide {
+  from {
+    width: 64px;
+  }
+  to {
+    width: 304px;
+  }
+}
