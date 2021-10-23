@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #85dcba;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+button {
+  width: 128px;
+  height: 64px;
+  background-color: #e27d60;
+  border: 1px solid #e27d60;
+  color: #f2f2f2;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 10px 10px #60b393;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: #b35237;
+  border-color: #b35237;
+}
+
+button span {
+  padding-left: 0.5em;
+}
+
+.btn-txt {
+}
+
+.complete {
+  color: #f1fffa;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 64px;
+  height: 30px;
+}
+
+.no-display {
+  display: none;
+}
+
+.text {
+  top: -4px;
+  position: relative;
+}
+
+.animate {
+  animation-name: fallin;
+  animation-duration: 375ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.reveal {
+  animation-name: reveal;
+  animation-duration: 800ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fallin {
+  from {
+    width: 128px;
+    height: 64px;
+    opacity: 100%;
+  }
+  65% {
+    width: 152px;
+    height: 72px;
+    opacity: 100%;
+  }
+  99% {
+    width: 0px;
+    height: 0px;
+    opacity: 100%;
+  }
+  to {
+    width: 0px;
+    height: 0px;
+    opacity: 0%;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0%;
+    display: block;
+  }
+  to {
+    opacity: 100%;
+    display: block;
+  }
+}
