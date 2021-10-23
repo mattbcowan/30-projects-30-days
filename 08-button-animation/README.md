@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-[Live Site](https://mattbcowan.github.io/30-projects-30-days/08-button-animation)
+[Live Site](https://mattbcowan.github.io/30-projects-30-days/08-button-animation/)
 
 ## My process
 
