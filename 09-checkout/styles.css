@@ -1,0 +1,141 @@
+:root {
+  --navajo-white: #ffdda1;
+  --maize-crayola: #ffd151;
+  --saffron: #f8c537;
+  --max-yellow-red: #edb230;
+  --princeton-orange: #e77728;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+  background-color: var(--navajo-white);
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 1024px;
+  width: 100%;
+  margin: 2em;
+  background-color: var(--maize-crayola);
+}
+
+.grid {
+  display: grid;
+}
+
+.col-payment {
+  background-color: var(--maize-crayola);
+  color: #0f0f0f;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-payment input {
+  background-color: rgba(231, 119, 40, 0.4);
+  border: none;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  color: white;
+  font-size: 1.1em;
+  transition: all 0.25s ease-in-out;
+}
+
+.col-payment input:focus {
+  transform: scale(1.1);
+}
+
+.price {
+  width: auto;
+  padding: 0.5em 1em;
+  text-align: center;
+  background-color: #0f0f0f;
+  margin-top: -6px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.img-container img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.payment-btn {
+  width: 100%;
+  height: auto;
+  font-size: 1em;
+  padding: 1em;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  background-color: var(--princeton-orange);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 125ms ease-in;
+}
+
+.payment-btn:hover {
+  background-color: var(--max-yellow-red);
+}
+
+.btn-text {
+  top: -4px;
+  position: relative;
+}
+
+.payment-btn .material-icons {
+  color: rgba(255, 209, 81, 0.5);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .col-payment {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .col-payment-btn {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .col-image {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}
