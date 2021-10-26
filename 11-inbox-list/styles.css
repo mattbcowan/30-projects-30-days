@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
+  background-color: paleturquoise;
 }
 
 ul {
@@ -9,14 +11,21 @@ ul {
   background-color: silver;
   padding: 0;
   margin: 0;
-  max-width: 480px;
+  width: 480px;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 20px 20px steelblue;
 }
 
 li {
   background-color: gainsboro;
-  padding: 1em;
+  padding: 1.5em 1em;
   margin-bottom: 2px;
   cursor: pointer;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 li a {
@@ -24,14 +33,15 @@ li a {
   color: #1b1b1b;
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+h3 {
+  margin-top: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .active {
