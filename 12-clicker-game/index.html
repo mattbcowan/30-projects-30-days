@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Projects 30 Days - Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="card">
+                <h1>Score: <span id="total-score">0</span></h1>
+                <button onclick="addToScore()" class="btn clickBtn">Click Me!</button>
+            </div>
+            <div class="power-ups">
+                <div class="card">
+                    <div class="card-text">Autoclickers Owned: <span id="auto-clickers">0</span></div>
+                    <div class="card-text">Cost: <span id="auto-clicker-cost">0</span></div>
+                    <button onclick="addAutoclicker()" id="autoclicker-btn" class="btn">Autoclicker</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
