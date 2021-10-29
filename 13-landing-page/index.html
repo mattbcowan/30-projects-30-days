@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Projects 30 Days - Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">No1StartUp</div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+          <li class="nav-item">
+            <button class="button button-nav">Get Started</button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <!-- Header / Jumbotron -->
+        <section class="grid m-t">
+          <div class="col-2">
+            <!-- H1 Text - Elevator Pitch / Motto -->
+            <h1>We make the things you need.</h1>
+            <!-- Smaller Text - Describe elevator pitch / motto further -->
+            <p>
+              Anything, everything. If you need it we will make it because
+              money.
+            </p>
+            <button class="button">Get Started</button>
+          </div>
+          <div class="big-image">
+            <!-- BIG IMAGE -->
+            <img
+              src="./assets/undraw_lost_online_re_upmy.svg"
+              alt=""
+              aria-hidden="true"
+              class="width-100"
+            />
+            <!-- Get Started / Learn More buttons -->
+          </div>
+        </section>
+        <!-- What We Do -->
+        <section class="m-t">
+          <h2>What Do We Do?</h2>
+          <!-- More granular detail on elevator pitch -->
+          <p>
+            We change the world. Our groundbreaking start up does exactly what
+            you need it to do. It's absolutely incredible and nothing that
+            you've seen before. Best of all... We use buzz words like Machine
+            Learning and Blockchain.
+          </p>
+        </section>
+        <!-- Featured On / Who Uses Us -->
+        <section class="m-t">
+          <h2>Our Partners</h2>
+          <!-- Logos of all the companies that "use" the product -->
+          <div class="partners">
+            <img
+              src="./assets/amazon.svg"
+              alt="amazon"
+              class="partner p-col-1"
+            />
+            <img
+              src="./assets/coke.svg"
+              alt="coca cola"
+              class="partner p-col-2"
+            />
+            <img
+              src="./assets/microsoft.svg"
+              alt="microsoft"
+              class="partner p-col-3"
+            />
+          </div>
+        </section>
+        <!-- Plans - Basic | Standard | Premium etc. -->
+        <!-- This section is normally a multi-column grid with a checklist look -->
+        <section class="m-t">
+          <!-- Features -->
+          <h2>Plans</h2>
+          <div class="plans-grid">
+            <article class="basic-col">
+              <h3>Basic</h3>
+              <ul class="plans-card">
+                <li>Storage Access</li>
+                <li>Cloud Sync</li>
+                <li>
+                  <button class="button-plans">Get Started | $0/mo</button>
+                </li>
+              </ul>
+            </article>
+            <article class="pro-col">
+              <h3>Pro</h3>
+              <ul class="plans-card">
+                <li>Storage Access</li>
+                <li>Cloud Sync</li>
+                <li>100PB Data</li>
+                <li>Access to the Blockchain</li>
+                <li><button class="button-plans">Go Pro | $20/mo</button></li>
+              </ul>
+            </article>
+            <article class="premium-col">
+              <h3>Premium</h3>
+              <ul class="plans-card">
+                <li>Storage Access</li>
+                <li>Cloud Sync</li>
+                <li>100PB Data</li>
+                <li>Access to the Blockchain</li>
+                <li>Machine Learning Algorithms</li>
+                <li>Personal Assistant</li>
+                <li><button class="button-plans">Top Tier | $50/mo</button></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <section class="footer-section footer-product">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/">Product 1</a></li>
+          <li><a href="/">Product 2</a></li>
+          <li><a href="/">Product 3</a></li>
+          <li><a href="/">Product 4</a></li>
+        </ul>
+      </section>
+      <section class="footer-section footer-docs">
+        <h4>Docs</h4>
+        <ul>
+          <li><a href="/">Quickstart</a></li>
+          <li><a href="/">Tutorials</a></li>
+          <li><a href="/">API Reference</a></li>
+          <li><a href="/">API Status</a></li>
+        </ul>
+      </section>
+      <section class="footer-section footer-other">
+        <h4>Other</h4>
+        <ul>
+          <li><a href="/">Jobs</a></li>
+          <li><a href="/">About Us</a></li>
+          <li><a href="/">Press & Media</a></li>
+          <li><a href="/">Events</a></li>
+        </ul>
+      </section>
+    </footer>
+    <script src="scripts.js" type="text/javascript"></script>
+  </body>
+</html>
