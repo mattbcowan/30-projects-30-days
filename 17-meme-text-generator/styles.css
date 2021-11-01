@@ -1,0 +1,61 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  font-size: 18px;
+}
+
+main {
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  max-width: 800px;
+}
+
+.visuallyHidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.userTextbox {
+  border: 3px solid #3c1f94;
+  border-radius: 1em;
+  padding: 0.5em;
+  font-size: 18px;
+  margin-bottom: 1em;
+  resize: none;
+  transition: 200ms all ease;
+}
+
+.userTextbox:focus {
+  outline: 6px solid #3c1f94;
+  opacity: 70%;
+}
+
+.submitBtn {
+  background-color: #3c1f94;
+  color: #fff;
+  padding: 0.5em;
+  font-size: 18px;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 300ms all ease;
+}
+
+.submitBtn:hover {
+  background-color: #1e0c54;
+}
+
+@media (min-width: 800px) {
+  .container {
+    margin: 1em auto;
+  }
+}

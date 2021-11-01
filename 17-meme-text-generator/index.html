@@ -6,23 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>30 Projects 30 Days - Meme Text Generator</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <form class="text-box">
-        <label for="user_text">Enter Your Text Here</label>
+      <div class="container">
+        <h1>MeMe TeXt GeNeRaToR</h1>
+        <label for="user_text" class="visuallyHidden"
+          >Enter Your Text Below</label
+        >
         <textarea
           name="user_text"
           id="user_text"
           cols="30"
           rows="10"
+          class="userTextbox"
+          placeholder="Enter your text here."
         ></textarea>
         <button type="button" class="submitBtn" id="submit_btn">
           Generate Text
         </button>
-      </form>
-      <div>
-        <p id="generated_text">Your text will appear here.</p>
+
+        <div>
+          <p id="generated_text">Your text will appear here.</p>
+        </div>
       </div>
     </main>
     <script src="scripts.js"></script>
