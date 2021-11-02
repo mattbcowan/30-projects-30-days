@@ -11,6 +11,7 @@ submitBtn.onclick = () => {
   node.appendChild(document.createTextNode(groceryItem.value));
   listOfGroceries.appendChild(node);
   listItems = document.querySelectorAll(".listItem");
+  groceryItem.value = "";
 };
 
 let removeItem = (e) => {
