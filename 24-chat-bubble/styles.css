@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 body {
   padding: 0;
   margin: 0;
@@ -7,8 +14,14 @@ body {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100vh;
 }
@@ -25,6 +38,7 @@ body {
   border-radius: 80px;
   background-color: #f0f0f0;
   position: absolute;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   margin-left: -32px;
   margin-top: -60px;
@@ -36,10 +50,13 @@ body {
   padding: 8px 24px;
   background-color: #9afcb8;
   border-radius: 8px;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dot-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -52,81 +69,165 @@ body {
 }
 
 .dot:first-child {
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-name: hop;
   animation-name: hop;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
 .dot:nth-child(2) {
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-name: hop;
   animation-name: hop;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-delay: 250ms;
   animation-delay: 250ms;
 }
 
 .dot:nth-child(3) {
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-name: hop;
   animation-name: hop;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-delay: 500ms;
   animation-delay: 500ms;
 }
 
 .dot:last-child {
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-name: hop;
   animation-name: hop;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-delay: 750ms;
   animation-delay: 750ms;
 }
 
 .scaleToZero {
+  -webkit-animation-duration: 500ms;
   animation-duration: 500ms;
+  -webkit-animation-name: scaleToZero;
   animation-name: scaleToZero;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
   transform-origin: top left;
 }
 
 .scaleToOne {
+  -webkit-animation-duration: 500ms;
   animation-duration: 500ms;
+  -webkit-animation-name: scaleToOne;
   animation-name: scaleToOne;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
   transform-origin: top left;
+}
+
+@-webkit-keyframes hop {
+  from {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  20% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  40% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
 }
 
 @keyframes hop {
   from {
+    -webkit-transform: translateY(0%);
     transform: translateY(0%);
   }
   20% {
+    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
   }
   40% {
+    -webkit-transform: translateY(0%);
     transform: translateY(0%);
   }
   to {
+    -webkit-transform: translateY(0%);
     transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes scaleToZero {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  35% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0);
   }
 }
 
 @keyframes scaleToZero {
   from {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
   35% {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
   to {
+    -webkit-transform: scale(0);
     transform: scale(0);
+  }
+}
+
+@-webkit-keyframes scaleToOne {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  70% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes scaleToOne {
   from {
+    -webkit-transform: scale(0);
     transform: scale(0);
   }
   70% {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
   to {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
