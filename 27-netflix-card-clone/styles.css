@@ -1,0 +1,169 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 367px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-header {
+  width: 367px;
+}
+
+.card-header img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  background-color: #171717;
+  color: #fff;
+  padding: 16px;
+  margin-top: -4px;
+}
+
+.button-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-buttons {
+  display: flex;
+}
+
+.btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  background-color: #202020;
+  border: 2px solid #868686;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 50px;
+  margin-left: 8px;
+}
+
+.btn:hover {
+  border-color: #fff;
+}
+
+.play {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+  margin-left: 0;
+}
+
+span.match-percent {
+  color: #35cd61;
+  font-weight: 500;
+  margin-left: 0;
+}
+
+.ratings-info {
+  margin-top: 16px;
+}
+
+.ratings-info > * {
+  margin-left: 8px;
+}
+
+.rating {
+  font-size: 14px;
+  padding: 4px 6px;
+  border: 1px solid #696969;
+}
+
+.high-def {
+  font-size: 12px;
+  padding: 3px 6px;
+  border: 1px solid #696969;
+  border-radius: 4px;
+}
+
+.tags {
+  margin-top: 24px;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #595959;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 0 6px;
+  margin-bottom: 2px;
+}
+
+.thumbnail {
+  width: 244px;
+  height: 138px;
+  position: relative;
+  z-index: 2;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#full-card {
+  position: absolute;
+  z-index: 1;
+}
+
+.fadeIn {
+  animation-name: fadeInAndGrow;
+  animation-duration: 350ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+}
+
+.hide {
+  animation-name: hide;
+  animation-duration: 100ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease;
+}
+
+@keyframes fadeInAndGrow {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
