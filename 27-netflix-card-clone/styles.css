@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 body {
   font-family: "Helvetica Neue", sans-serif;
   padding: 0;
@@ -8,8 +15,14 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #141414;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -37,22 +50,34 @@ body {
 }
 
 .button-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .left-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .btn {
   width: 38px;
   height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #202020;
   border: 2px solid #868686;
   color: #fff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-size: 18px;
   border-radius: 50px;
@@ -133,29 +158,63 @@ span.match-percent {
 }
 
 .fadeIn {
+  -webkit-animation-name: fadeInAndGrow;
   animation-name: fadeInAndGrow;
+  -webkit-animation-duration: 350ms;
   animation-duration: 350ms;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
   animation-direction: normal;
+  -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
 
 .hide {
+  -webkit-animation-name: hide;
   animation-name: hide;
+  -webkit-animation-duration: 100ms;
   animation-duration: 100ms;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
   animation-direction: normal;
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
 }
 
-@keyframes fadeInAndGrow {
+@-webkit-keyframes fadeInAndGrow {
   from {
+    -webkit-transform: scale(0.7);
     transform: scale(0.7);
     opacity: 0;
   }
   to {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes fadeInAndGrow {
+  from {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
