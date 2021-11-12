@@ -1,0 +1,158 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #a0e9ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  background-color: #fff;
+}
+
+.upload-item-container {
+  margin-top: 36px;
+  padding: 8px 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.upload-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.upload-item:last-child {
+  margin-bottom: 0;
+}
+
+.upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.badge {
+  width: 48px;
+  height: 48px;
+  background-color: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 12px;
+  margin-right: 16px;
+}
+
+.upload-title {
+  font-weight: 500;
+}
+
+.upload-size {
+  color: #777777;
+}
+
+.add-button-container {
+  height: 48px;
+  width: 48px;
+  background-color: #3d91ff;
+  color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 24px;
+  border-radius: 48px;
+  left: 320px;
+  top: 24px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 16px 8px rgba(88, 160, 253, 0.3);
+  box-shadow: 0 0 16px 8px rgba(88, 160, 253, 0.3);
+}
+
+.card-bottom {
+  background-color: #e6e6e6;
+  padding: 16px;
+}
+
+.drop-area {
+  padding: 32px;
+  border: 3px dashed #aaaaaa;
+  border-radius: 16px;
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.drop-area a {
+  color: #3d91ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.psd {
+  background-color: slateblue;
+}
+
+.pdf {
+  background-color: tomato;
+}
+
+.zip {
+  background-color: darksalmon;
+}
