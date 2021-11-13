@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.dvd-container {
+  background-color: greenyellow;
+  width: 250px;
+  padding: 8px;
+}
+
+#dvd-logo {
+  width: 250px;
+  height: auto;
+}
+
+.move-x {
+  animation: x 13s linear infinite alternate;
+}
+
+.move-y {
+  animation: y 7s linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - 264px));
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - 150px));
+  }
+}
